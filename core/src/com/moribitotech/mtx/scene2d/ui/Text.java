@@ -34,15 +34,15 @@ public class Text extends AbstractActorLight {
 		this.bitMapFont = bitMapFont;
 		//
 		if (DIPActive) {
-			bitMapFont.setScale(AppSettings.getWorldSizeRatio());
-		}
+            bitMapFont.getData().setScale(AppSettings.getWorldSizeRatio());
+        }
 	}
 
 	public void setBitMapFont(BitmapFont bitMapFont, boolean DIPActive) {
 		this.bitMapFont = bitMapFont;
 		//
 		if (DIPActive) {
-			bitMapFont.setScale(AppSettings.getWorldSizeRatio());
+            bitMapFont.getData().setScale(AppSettings.getWorldSizeRatio());
 		}
 	}
 
