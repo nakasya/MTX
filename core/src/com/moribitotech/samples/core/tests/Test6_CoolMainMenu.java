@@ -11,6 +11,7 @@ import com.moribitotech.mtx.screen.AbstractScreen;
 import com.moribitotech.samples.core.testassets.Assets;
 
 public class Test6_CoolMainMenu extends AbstractScreen {
+	private static final float SIDE_BTN_WIDTH_RATE = 0.43f; // about 1 - 550/960
 	private Label lblFps;
 	private Label lblScreenTime;
 	
@@ -51,7 +52,7 @@ public class Test6_CoolMainMenu extends AbstractScreen {
 		// ########################################################################
 		Table table = MenuCreator.createTable(true, getGame().getAssets().getSkin());
 		table.setPosition(getStage().getWidth() + 50, table.getY());
-		table.addAction(Actions.moveTo(getStage().getWidth() - 550,  table.getY(), 0.9f));
+		table.addAction(Actions.moveTo(getStage().getWidth() * SIDE_BTN_WIDTH_RATE,  table.getY(), 0.9f));
 		table.row();
 		getStage().addActor(table);
 		
